@@ -8,6 +8,18 @@ export default defineConfig({
 			title: 'Sajhe Sapne Learning Platform',
 			sidebar: [
 				{
+					label: 'Dr. Racket',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Installation', link: '/racket/install/' },
+						{ label: 'Function design', link: '/racket/function/' },
+						{ label: 'Data Design', link: '/racket/data/' },
+						{ label: 'Animations', link: '/racket/anima/' },
+						{ label: 'List mechanism', link: '/racket/lists/' },
+						{ label: 'Natural data type', link: '/racket/natural/' }
+					],
+				},
+				{
 					label: 'HTML',
 					items: [
 						// Each item here is one entry in the navigation menu.
@@ -26,18 +38,6 @@ export default defineConfig({
 						{ label: 'id', link: '/css/id/' },
 						{ label: 'grid', link: '/css/grid/' },
 						{ label: 'flex', link: '/css/flex/' }
-					],
-				},
-				{
-					label: 'Dr. Racket',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Installation', link: '/racket/install/' },
-						{ label: 'Function design', link: '/racket/function/' },
-						{ label: 'Data Design', link: '/racket/data/' },
-						{ label: 'Animations', link: '/racket/anima/' },
-						{ label: 'List mechanism', link: '/racket/lists/' },
-						{ label: 'Natural data type', link: '/racket/natural/' }
 					],
 				},
 				{
