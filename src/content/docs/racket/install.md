@@ -4,7 +4,7 @@ description: A guide in my new Starlight docs site.
 ---
 
 
-[![xyz](../../../assets/harryimg.jpeg)](https://youtu.be/BsDoLVMnmZs?si=HnNVBpm-EzkVLH_y)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ky2um_0TovM?si=GMu2dZDczYzDKIrl" title="Racket installtion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Notes
 Coding (कम्प्यटूर्स का जाद)ूसीखने के लिए हम जिस भाषा का प्रयोग
@@ -27,9 +27,13 @@ Dr Racket launch करने के बाद, आपको सबसे नी
 
 
 ## Assignment
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id. Vitae aliquet nec ullamcorper sit. In nibh mauris cursus mattis molestie a iaculis at erat. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Consequat id porta nibh venenatis. Egestas congue quisque egestas diam in arcu cursus euismod. Tempus urna et pharetra pharetra. Morbi tristique senectus et netus et. Amet est placerat in egestas erat. In nisl nisi scelerisque eu ultrices vitae. Nunc mattis enim ut tellus elementum sagittis vitae et leo. Aliquet eget sit amet tellus cras adipiscing enim eu. Amet cursus sit amet dictum sit amet. Odio euismod lacinia at quis.
+```
+1. Install Dr.Racket 
+2. Choose the student language 
 
-Lobortis mattis aliquam faucibus purus in. Augue interdum velit euismod in pellentesque massa placerat duis. Vulputate sapien nec sagittis aliquam. Gravida arcu ac tortor dignissim convallis aenean et tortor at. Aliquet porttitor lacus luctus accumsan tortor. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Libero id faucibus nisl tincidunt eget nullam. Nunc eget lorem dolor sed viverra ipsum. Consectetur lorem donec massa sapien faucibus et molestie. Iaculis nunc sed augue lacus viverra vitae congue. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Sagittis nisl rhoncus mattis rhoncus urna. Arcu ac tortor dignissim convallis aenean et.
-
+```
 ## Additional resources
-[w3school](https://www.w3schools.com/html/html_intro.asp)
+
+You can go through with these references
+[install in ubuntu](https://askubuntu.com/questions/120833/how-i-install-drracket),
+[install in window](https://docs.racket-lang.org/pollen/Installation.html)
