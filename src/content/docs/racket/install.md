@@ -7,7 +7,24 @@ description: A guide in my new Starlight docs site.
 [![xyz](../../../assets/harryimg.jpeg)](https://youtu.be/BsDoLVMnmZs?si=HnNVBpm-EzkVLH_y)
 
 ## Notes
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+Coding (कम्प्यटूर्स का जाद)ूसीखने के लिए हम जिस भाषा का प्रयोग
+करेंगे उसे Racket कहते हैं।
+
+Racket सिखने के लिए आपको एक software का install करना होगा
+जिसका नाम है- Dr Racket
+
+Dr Racket install करने के निर्देश इस लिकं पर मिलेंगे-
+[https://download.racket-lang.org/](https://download.racket-lang.org/)
+
+![phase](../../../assets/racketimg/phase.png)
+**Dr Racket install** होने के बाद **launch** करनेपर ऐसा दिखेगा
+
+Dr Racket launch करने के बाद, आपको सबसे नीचे बने हए status bar से “Beginning Student” language का चयन करना होगा।
+![phase](../../../assets/racketimg/lang.jpeg)
+**Racket में beginning student language**
+
+अब आप कंप्यटूर वाला जादू(coding) सीखने के लिए तयैार हैं।
+
 
 ## Assignment
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id. Vitae aliquet nec ullamcorper sit. In nibh mauris cursus mattis molestie a iaculis at erat. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Consequat id porta nibh venenatis. Egestas congue quisque egestas diam in arcu cursus euismod. Tempus urna et pharetra pharetra. Morbi tristique senectus et netus et. Amet est placerat in egestas erat. In nisl nisi scelerisque eu ultrices vitae. Nunc mattis enim ut tellus elementum sagittis vitae et leo. Aliquet eget sit amet tellus cras adipiscing enim eu. Amet cursus sit amet dictum sit amet. Odio euismod lacinia at quis.
