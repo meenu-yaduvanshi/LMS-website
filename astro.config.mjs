@@ -6,6 +6,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Sajhe Sapne Learning Platform',
+			components: {
+				// Override the default `SocialIcons` component.
+				SocialIcons: './src/components/email.astro',
+			},
 			sidebar: [
 				{
 					label: 'Dr. Racket',
