@@ -6,10 +6,14 @@ hero:
   tagline: Congrats to be part of our learning platform
   image:
     file: ../../assets/sajheLogo.jpeg
-  actions:
-    - text: Start
-      link: /racket/install/
-      icon: right-arrow
-      variant: primary
 ---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+**Please select a course that you want to be expert**
+<CardGrid>
+  <LinkCard title="Front-End" href="/html/example/" />
+  <LinkCard title="Back-End" href="" />
+  <LinkCard title="Racket" href="/racket/install/" />
+</CardGrid>
 
