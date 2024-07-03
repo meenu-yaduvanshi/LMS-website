@@ -7,8 +7,3 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 
 [![xyz](../../../assets/harry1.png)](https://youtu.be/BsDoLVMnmZs?si=HnNVBpm-EzkVLH_y)
 
-
-## Assignment ##
-
-1. Make a layout using flexbox.
-2. How txo do center div by using flex bo
