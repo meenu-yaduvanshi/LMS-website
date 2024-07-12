@@ -13,7 +13,10 @@ export default defineConfig({
 				Sidebar: './src/overrides/Sidebar.astro',
 				Pagination: './src/overrides/Pagination.astro',
 			},
-
+			customCss: [
+				// Relative path to your custom CSS file
+				'./src/styles/custom.css',
+			  ],
 		}),
 	],
 });

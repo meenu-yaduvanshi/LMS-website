@@ -1,0 +1,39 @@
+.cards {
+    width: 150px;
+    height: 150px;
+    /* background-color: forestgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cards:hover{
+    /* background-color: bisque; */
+    cursor: pointer;
+}
+
+.card-div {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    /* background-color: rgb(240, 195, 112); */
+}
+
+.container {
+    display: flex;
+    /* background-color: blueviolet; */
+    /* padding: 20px; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* @media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  } */
+
+  body{
+    margin: 0;
+  }

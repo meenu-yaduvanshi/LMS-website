@@ -10,10 +10,19 @@ hero:
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-**Please select a course that you want to be expert**
-<CardGrid>
-  <LinkCard title="Front-End" href="/html/example/" />
-  <LinkCard title="Back-End" href="" />
-  <LinkCard title="Racket" href="/racket/install/" />
-</CardGrid>
+#### Please select a course that you want to be expert
 
+<div class="container">
+  <div class="card-div">
+    <LinkCard class="cards" title="Front-End" href="/html/example/" />
+  </div>
+
+  <div class="card-div">
+    <LinkCard class="cards" title="Back-End" href="" />
+  </div>
+
+  <div class="card-div">
+    <LinkCard class="cards" title="Racket" href="/racket/install/" />
+  </div>
+
+</div>
