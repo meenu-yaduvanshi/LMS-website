@@ -9,9 +9,11 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Dr. Racket', autogenerate: { directory: 'racket/' } },
 				{ label: 'Front-end', autogenerate: { directory: 'html' } },
-			], components: {
+			], 
+			components: {
 				Sidebar: './src/overrides/Sidebar.astro',
 				Pagination: './src/overrides/Pagination.astro',
+				SocialIcons: './src/components/PageCom.astro',
 			},
 
 		}),
