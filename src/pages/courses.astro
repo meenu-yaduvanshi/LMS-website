@@ -3,15 +3,21 @@ import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
 import { CardGrid, LinkCard } from "@astrojs/starlight/components";
 ---
 <StarlightPage frontmatter={{
-    title: "Select your  Course",
+    title: "Please select a course that you want to be expert",
     template: 'splash'
 }}>
-Please select a course that you want to be expert
 <CardGrid>
-  <LinkCard title="Tarang" href="/html/example/" />
-  <LinkCard title="Umang" href="" />
-  <LinkCard title="Pehelwani" href="/racket/install/" />
-  <LinkCard title="English" href="/racket/install/" />
+  <LinkCard title="Tarang" href= "/tarangCoursesType " class="custom-card" />
+  <LinkCard title="Umang" href=""  class="custom-card" />
+  <LinkCard title="Pehelwani" href="" class="custom-card" />
+  <LinkCard title="English" href="" class="custom-card" />
 </CardGrid>
+
+<style>
+    .custom-card{
+      min-height: 200px;
+    }
+
+</style>
 
 </StarlightPage>
