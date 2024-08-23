@@ -12,6 +12,7 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Dr. Racket', autogenerate: { directory: 'racket/' } },
 				{ label: 'Front-end', autogenerate: { directory: 'html' } },
+				{ label: 'Umang', autogenerate: { directory: 'umang' } },
 			], 
 			components: {
 				Sidebar: './src/overrides/Sidebar.astro',
