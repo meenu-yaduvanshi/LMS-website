@@ -1,0 +1,31 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import {Card, CardGrid} from '@astrojs/starlight/components';
+import CustomCard from '../../src/components/CustomCard.astro';
+import CustomCardGrid from '../components/CustomCardGrid.astro';
+import Image from 'astro/components/Image.astro';
+import simranSajheImage from '../assets/simran.sajhe.jpg';
+---
+
+<StarlightPage frontmatter={{ title: '', template: 'splash' }}>
+    <h1 class="d">Developers</h1>
+    <CustomCardGrid>
+        <CustomCard title="Simran">
+            <Image src={simranSajheImage} alt={"picture of Simran"} width="200" height="200"/>
+            <p>Full Stack Developer</p>
+            <p>Sajhe Sapne</p>
+        </CustomCard>
+        <CustomCard title="Meenu Yadav">
+            <Image src={"https://placehold.co/200"} alt={"picture of Simran"} width="200" height="200"/>
+            <p>Full Stack Developer</p>
+            <p>Sajhe Sapne</p>
+        </CustomCard>
+        <CustomCard title="Rajeev Ranjhan Jhaa">
+            <Image src={"https://placehold.co/200"} alt={"picture of Simran"} width="200" height="200"/>
+            <p>Mentor</p>
+            <p>Sajhe Sapne</p>
+        </CustomCard>
+    </CustomCardGrid>
+   
+</StarlightPage>
+

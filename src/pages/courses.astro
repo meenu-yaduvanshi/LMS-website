@@ -1,0 +1,23 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import { CardGrid, LinkCard } from "@astrojs/starlight/components";
+---
+<StarlightPage frontmatter={{
+    title: "Please select a course that you want to be expert",
+    template: 'splash'
+}}>
+<CardGrid>
+  <LinkCard title="Tarang" href= "/tarangCoursesType " class="custom-card" />
+  <LinkCard title="Umang" href=" /umang/agintro "  class="custom-card" />
+  <LinkCard title="Pehelwani" href="" class="custom-card" />
+  <LinkCard title="English" href="" class="custom-card" />
+</CardGrid>
+
+<style>
+    .custom-card{
+      min-height: 200px;
+    }
+
+</style>
+
+</StarlightPage>

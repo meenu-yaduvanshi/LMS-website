@@ -5,15 +5,20 @@ template: splash
 hero:
   tagline: Congrats to be part of our learning platform
   image:
-    file: ../../assets/sajheLogo.jpeg
+    file: ../../assets/hero.webp
+  actions:
+    - text: Let's Learn
+      link: /courses
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/Simran-6008/lms-project
+      icon: external
+      variant: secondary
+      attrs:
+        rel: me
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-**Please select a course that you want to be expert**
-<CardGrid>
-  <LinkCard title="Front-End" href="/html/example/" />
-  <LinkCard title="Back-End" href="" />
-  <LinkCard title="Racket" href="/racket/install/" />
-</CardGrid>
 

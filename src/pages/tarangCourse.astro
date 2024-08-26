@@ -1,0 +1,15 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import { CardGrid, LinkCard } from "@astrojs/starlight/components";
+---
+<StarlightPage frontmatter={{
+    title: "Tarang Course",
+    template: 'splash'
+}}>
+
+<CardGrid>
+  <LinkCard title="HTML" href="/html/example"/>
+  <LinkCard title="CSS" href="/css/intro" />
+  <LinkCard title="JavaScript" href="/javascript/intro" />
+</CardGrid>
+</StarlightPage>
