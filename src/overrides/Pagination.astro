@@ -14,8 +14,25 @@ if (Astro.props.pagination.prev && !Astro.props.pagination.prev.href.startsWith(
 if (Astro.props.pagination.next && !Astro.props.pagination.next.href.startsWith(currentBase)) {
   Astro.props.pagination.next = undefined;
 }
+
+
+// Filter our sidebar groups that do not include links to the current product.
+Astro.props.sidebar = Astro.props.sidebar
+  .filter((entry) => (
+    entry.type === 'group' &&
+    entry.entries.some(
+      (subEntry) => subEntry.type === 'link' && subEntry.href.startsWith(currentBase)
+    )
+  ));
+
+const {sidebar} = Astro.props;
+const {title} = Astro.props.entry.data;
 ---
-<h2>hello</h2>
+<div>
+<input type="checkbox" name="status" id="status"/>
+<label for="status">Mark as Done</label>
+</div>
+
 <Default {...Astro.props}><slot /></Default>
 
 
@@ -52,4 +69,37 @@ if (Astro.props.pagination.next && !Astro.props.pagination.next.href.startsWith(
 	--sl-color-black: #ffffff;
 }
 </style>
+}
+<script define:vars={{sidebar, title}}>
+	
+	const status = document.querySelector('#status');
+	const sidebarSelectors = document.querySelectorAll('.notComplete');
+	m
+	apOverSidebar();
+
+	if(localStorage.getItem(title)==='true')
+		status.checked = true;
+	else
+		status.checked = false;
+
+	status.addEventListener('click',()=>{
+		localStorage.setItem(title, status.checked);
+		mapOverSidebar();
+	})
+	
+	function mapOverSidebar(){
+		sidebar.map((group)=>{
+		const items = group.entries;
+		for(let i=0; i<items.length; i++){
+			if(localStorage.getItem(items[i].label)==='true'){
+				sidebarSelectors[i].classList.add("Complete");
+				sidebarSelectors[i].classList.remove("notComplete");
+			}
+			else{
+				sidebarSelectors[i].classList.remove("Complete");
+				sidebarSelectors[i].classList.add("notComplete");	
+			}
+		}
+	
+	})
 }

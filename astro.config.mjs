@@ -19,9 +19,9 @@ export default defineConfig({
 				Pagination: './src/overrides/Pagination.astro',
 				SocialIcons: './src/components/PageCom.astro',
 			},
-			customCss : [
-				'/src/styles/custom.css'
-			]
+			// customCss : [
+			// 	'/src/styles/custom.css'
+			// ]
 
 		}),
 	],
