@@ -3,10 +3,8 @@ import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/Pagination.astro';
 
 // Get the base path of the current URL
-// e.g. `/product-2/some-page/` returns `/product-2/`
 const currentBase = "/"+ Astro.url.pathname.split('/').slice(0, 3)[1];
 
-//console.log("this is currentBase" + " " + currentBase[1])
 // Remove pagination links across product categories.
 if (Astro.props.pagination.prev && !Astro.props.pagination.prev.href.startsWith(currentBase)) {
   Astro.props.pagination.prev = undefined;
@@ -14,7 +12,6 @@ if (Astro.props.pagination.prev && !Astro.props.pagination.prev.href.startsWith(
 if (Astro.props.pagination.next && !Astro.props.pagination.next.href.startsWith(currentBase)) {
   Astro.props.pagination.next = undefined;
 }
-
 
 // Filter our sidebar groups that do not include links to the current product.
 Astro.props.sidebar = Astro.props.sidebar
@@ -27,14 +24,18 @@ Astro.props.sidebar = Astro.props.sidebar
 
 const {sidebar} = Astro.props;
 const {title} = Astro.props.entry.data;
+
+// Check if the current page is a documentation page (by checking if it has a sidebar)
+const isDocsPage = sidebar && sidebar.length > 0;
 ---
-<div>
-<input type="checkbox" name="status" id="status"/>
-<label for="status">Mark as Done</label>
-</div>
+{isDocsPage && (
+  <div id="status-container">
+    <input type="checkbox" name="status" id="status"/>
+    <label for="status">Mark as Done</label>
+  </div>
+)}
 
 <Default {...Astro.props}><slot /></Default>
-
 
 <!-- Gratuitous extra example of theming Product 2 differently. -->
 {currentBase === '/product-2/' &&
@@ -74,8 +75,8 @@ const {title} = Astro.props.entry.data;
 	
 	const status = document.querySelector('#status');
 	const sidebarSelectors = document.querySelectorAll('.notComplete');
-	m
-	apOverSidebar();
+	
+	mapOverSidebar();
 
 	if(localStorage.getItem(title)==='true')
 		status.checked = true;
@@ -103,3 +104,4 @@ const {title} = Astro.props.entry.data;
 	
 	})
 }
+</script>

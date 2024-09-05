@@ -1,0 +1,33 @@
+sl-container {
+
+    max-width: none !important;
+  }
+.sl-container:where(.astro-7nkwcw3z) {
+    margin-inline: var(--sl-content-margin-inline, auto);
+    width: 100%;
+}
+.meta:where(.astro-3yyafb3n) {
+    gap: 0.75rem 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+    display: none;
+}
+.sl-container:where(.astro-7nkwcw3z) {
+    max-width: 100%;
+    /* Remove or comment out max-width property */
+    /* max-width: var(--sl-content-width); */
+}
+.hero:where(.astro-jbfsktt5) {
+    width: 80%;
+    margin: auto;
+}
+body  {
+    /* background-image: url("src/assets/b2.jpeg"); */
+    background-color: #fef5f5;
+    /* background-repeat: no-repeat; Prevent the image from repeating */
+    /* background-size: cover; Adjusts the image to cover the entire background */
+
+  }
