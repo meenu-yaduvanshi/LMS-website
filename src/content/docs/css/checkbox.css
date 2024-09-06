@@ -1,0 +1,9 @@
+.notComplete::after {
+    content: '\2757'; /* Unicode for empty checkbox */
+    color: yellow;
+  }
+
+  .Complete::after {
+    content: '\2714'; /* Unicode for empty checkbox */
+    color: green;
+  }

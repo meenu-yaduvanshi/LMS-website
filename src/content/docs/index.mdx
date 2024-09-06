@@ -1,24 +1,33 @@
 ---
-title: Learn coding with us
-description: we are providing best learning platform.
+title: शिक्षा की नई शुरुआत — हमारे हिंदी पाठ्यक्रम के साथ !
+description: हिंदी में सीखने का नया अनुभव आपका इंतजार कर रहा है|
 template: splash
 hero:
-  tagline: Congrats to be part of our learning platform
+  tagline: हिंदी में सीखने का नया अनुभव आपका इंतजार कर रहा है|
   image:
-    file: ../../assets/hero.webp
+    file: ../../assets/landingLogo.png
   actions:
-    - text: Let's Learn
+    - text: आगे बढ़ें !
       link: /courses
       icon: right-arrow
       variant: primary
-    - text: View on GitHub
+    - text: GitHub
       link: https://github.com/Simran-6008/lms-project
       icon: external
       variant: secondary
       attrs:
         rel: me
+        css: |
+          .status-container {
+            display: none;
+          }
+head:
+  - tag: style
+    content: "#status-container{display: none}"
 ---
 
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
+import Footer from '../../components/Footer.astro'
+
+<Footer/>
 
