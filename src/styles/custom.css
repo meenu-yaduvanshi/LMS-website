@@ -1,4 +1,4 @@
-sl-container {
+/* sl-container {
 
     max-width: none !important;
   }
@@ -18,11 +18,15 @@ sl-container {
 .sl-container:where(.astro-7nkwcw3z) {
     max-width: 100%;
     /* Remove or comment out max-width property */
-    /* max-width: var(--sl-content-width); */
-}
+    /* max-width: var(--sl-content-width); *
 .hero:where(.astro-jbfsktt5) {
     width: 80%;
     margin: auto;
+} */
+
+#footer-container{
+    position: absolute;
+    left: 0px;
 }
 body  {
     /* background-image: url("src/assets/b2.jpeg"); */
@@ -30,4 +34,14 @@ body  {
     /* background-repeat: no-repeat; Prevent the image from repeating */
     /* background-size: cover; Adjusts the image to cover the entire background */
 
+  }
+
+.notComplete::after {
+    content: '\2757'; /* Unicode for empty checkbox */
+    color: yellow;
+  }
+
+  .Complete::after {
+    content: '\2714'; /* Unicode for empty checkbox */
+    color: green;
   }
