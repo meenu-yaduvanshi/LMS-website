@@ -26,15 +26,14 @@ const {sidebar} = Astro.props;
 const {title} = Astro.props.entry.data;
 
 // Check if the current page is a documentation page (by checking if it has a sidebar)
-const isDocsPage = sidebar && sidebar.length > 0;
+const {hasSidebar} = Astro.props;
 ---
-{isDocsPage && (
+{hasSidebar && (
   <div id="status-container">
     <input type="checkbox" name="status" id="status"/>
     <label for="status">Mark as Done</label>
   </div>
 )}
-
 <Default {...Astro.props}><slot /></Default>
 
 <!-- Gratuitous extra example of theming Product 2 differently. -->

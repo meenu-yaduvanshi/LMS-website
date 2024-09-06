@@ -7,7 +7,3 @@
     content: '\2714'; /* Unicode for empty checkbox */
     color: green;
   }
-
-  #status-container{
-    display: none;
-  }
