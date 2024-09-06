@@ -1,0 +1,143 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+---
+
+<div class="container">
+    <div id="quiz"></div>
+    <button id="submit">Submit Quiz</button>
+</div>
+
+<script>
+    var myQuestions = [
+        {
+            question: "1. Tag of HTML Tag is called as ____.",
+            answers: {
+                a: "Closed Tag",
+                b: "Starting Tag",
+                c: "Forward Tag",
+                d: "Ending Tag",
+            },
+            correctAnswer: "b",
+        },
+        {
+            question: "2. Caption Tag in HTML?",
+            answers: {
+                a: "Is used to display the Title for table at the top",
+                b: "Is used to display the Title for table at the bottom",
+                c: "Both",
+                d: "None",
+            },
+            correctAnswer: "c",
+        },
+    ];
+
+    var quizContainer = document.getElementById("quiz");
+    var submitButton = document.getElementById("submit");
+
+    generateQuiz(myQuestions, quizContainer, submitButton);
+
+    function generateQuiz(questions, quizContainer, submitButton) {
+        function showQuestions(questions, quizContainer) {
+            var output = [];
+            var answers;
+
+            for (var i = 0; i < questions.length; i++) {
+                answers = [];
+                for (let letter in questions[i].answers) {
+                    answers.push(
+                        "<label>" +
+                            '<input type="radio" name="question' +
+                            i +
+                            '" value="' +
+                            letter +
+                            '">' +
+                            letter +
+                            ": " +
+                            questions[i].answers[letter] +
+                            "</label>",
+                        "<br/>",
+                    );
+                }
+                output.push(
+                    '<div class="question">' +
+                        questions[i].question +
+                        "</div>" +
+                        '<div class="answers">' +
+                        answers.join("") +
+                        "</div>",
+                );
+            }
+
+            quizContainer.innerHTML = output.join("");
+        }
+
+        function validateQuiz(questions, quizContainer) {
+            var answerContainers = quizContainer.querySelectorAll(".answers");
+            for (var i = 0; i < questions.length; i++) {
+                var userAnswer = answerContainers[i].querySelector(
+                    "input[name=question" + i + "]:checked"
+                );
+                if (!userAnswer) {
+                    return false; // If any question is not answered
+                }
+            }
+            return true; // All questions are answered
+        }
+
+        function showResults(questions, quizContainer) {
+            var answerContainers = quizContainer.querySelectorAll(".answers");
+
+            var userAnswer = "";
+            var numCorrect = 0;
+
+            for (var i = 0; i < questions.length; i++) {
+                userAnswer = (
+                    answerContainers[i].querySelector(
+                        "input[name=question" + i + "]:checked"
+                    ) || {}
+                ).value;
+
+                if (userAnswer === questions[i].correctAnswer) {
+                    numCorrect++;
+                    answerContainers[i].style.color = "green";
+                } else {
+                    answerContainers[i].style.color = "red";
+                }
+
+                // Show correct answers in green
+                var correctAnswer = questions[i].correctAnswer;
+                answerContainers[i].querySelector(
+                    'input[value="' + correctAnswer + '"]'
+                ).parentElement.style.color = "green";
+            }
+
+            alert("You got " + numCorrect + " out of " + questions.length + " correct!");
+        }
+
+        showQuestions(questions, quizContainer);
+
+        submitButton.onclick = function () {
+            if (validateQuiz(questions, quizContainer)) {
+                showResults(questions, quizContainer);
+            } else {
+                alert("Please answer all questions before submitting.");
+            }
+        };
+    }
+</script>
+
+<style>
+    .container{
+        background-color: rgb(247, 252, 252);
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    #quiz{
+        font-size: 20px;
+    }
+
+    .question{
+        font-weight: bold;
+    }
+</style>
