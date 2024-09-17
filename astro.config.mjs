@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
+import react from '@astrojs/react'; // React Integration import kiya
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
+		react(), // React ko integrations me add kiya
 		starlight({
 			title: 'Self-Learning',
 			logo: {

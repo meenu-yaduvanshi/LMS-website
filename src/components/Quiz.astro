@@ -1,0 +1,8 @@
+---
+const { data } = Astro.props;
+import QuizComponent from './QuizComponent';
+---
+
+<div>
+  <QuizComponent client:load data={data} />
+</div>

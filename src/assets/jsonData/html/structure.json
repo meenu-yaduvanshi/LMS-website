@@ -1,0 +1,34 @@
+{
+    "questions": [
+        {
+            "question": "1. What is attribute....",
+            "options": [
+                "style",
+                "tag",
+                "src",
+                "link"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "2. Wher we use attributes",
+            "options": [
+                "html",
+                "css",
+                "json",
+                "javaScript"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "3. What is the correct HTML element for inserting a line break?",
+            "options": [
+                "<br>",
+                "<lb>",
+                "<break>",
+                "<newline>"
+            ],
+            "answer": 0
+        }
+    ]
+}

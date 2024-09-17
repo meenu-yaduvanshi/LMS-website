@@ -1,0 +1,35 @@
+{
+    "quizTitle": "HTML Quiz",
+    "questions": [
+        {
+            "question": "1. Which HTML attribute is used to define inline styles?",
+            "options": [
+                "style",
+                "class",
+                "font",
+                "styles"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "2. Which HTML element is used to specify a footer for a document or section?",
+            "options": [
+                "<footer>",
+                "<bottom>",
+                "<section>",
+                "<foot>"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "3. What is the correct HTML element for inserting a line break?",
+            "options": [
+                "<br>",
+                "<lb>",
+                "<break>",
+                "<newline>"
+            ],
+            "answer": 0
+        }
+    ]
+}
