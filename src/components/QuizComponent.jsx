@@ -43,7 +43,7 @@ const QuizComponent = ({ data }) => {
                                             : 'transparent',
                                     borderRadius: '5px',
                                 }}
-                            >
+                            > 
                                 <label style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
                                     <input
                                         type="radio"
