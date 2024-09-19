@@ -1,0 +1,32 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import { CardGrid, LinkCard } from "@astrojs/starlight/components";
+---
+<StarlightPage frontmatter={{
+    title: "",
+    template: 'splash'
+}}>
+
+<h1 style="color: red;">Choose The Specific Language</h1>
+
+<CardGrid>
+  <LinkCard title="Typing Module" href="/pehalwaaniCourses" class="custom-card"/>
+  <LinkCard title="Google Docs" href="/pehalwaaniCourses" class="custom-card"/>
+  <LinkCard title="Google Form" href="/pehalwaaniCourses" class="custom-card"/>
+  <LinkCard title="Google Search" href="/pehalwaaniCourses" class="custom-card"/>
+  <LinkCard title="Email" href="/pehalwaaniCourses" class="custom-card"/>
+  <LinkCard title="Resume" href="/pehalwaaniCourses" class="custom-card"/>
+  <LinkCard title="JD" href="/pehalwaaniCourses" class="custom-card"/>
+  <LinkCard title="Google sheet" href="/pehalwaaniCourses" class="custom-card"/>
+
+  <!-- <LinkCard title="Front-End" href="/tarangCourse " class="custom-card"/>
+  <LinkCard title="Back-End" href="" class="custom-card"/> -->
+</CardGrid>
+
+<style>
+    .custom-card{
+    min-height: 200px;
+  }
+</style>
+
+</StarlightPage>

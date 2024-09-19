@@ -5,8 +5,8 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 
-			'Self-Learning',
+			title:
+				'Self-Learning',
 			logo: {
 				src: '/src/assets/logo.png'
 			},
@@ -26,7 +26,7 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Dr. Racket', autogenerate: { directory: 'racket/' } },
 				{ label: 'Front-end', autogenerate: { directory: 'html' } },
-				{ label: 'Umang', autogenerate: { directory: 'umang' } },
+				{ label: 'Pehalwaani', autogenerate: { directory: 'pehalwaani/typing/jaanpahchan' } },
 				{ label: 'CSS', autogenerate: { directory: 'css' } },
 			],
 			components: {
