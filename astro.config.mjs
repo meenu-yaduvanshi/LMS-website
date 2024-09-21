@@ -26,8 +26,12 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Dr. Racket', autogenerate: { directory: 'racket/' } },
 				{ label: 'Front-end', autogenerate: { directory: 'html' } },
-				{ label: 'Pehalwaani', autogenerate: { directory: 'pehalwaani/typing/jaanpahchan' } },
-				{ label: 'CSS', autogenerate: { directory: 'css' } },
+				{ label: 'Typing se Jaan-Pahchaan', autogenerate: { directory: 'pehalwaani/typing/jaanpahchan/' } },
+				{ label: 'Typing se Dosti', autogenerate: { directory: 'pehalwaani/typing/dosti/' } },
+				{ label: 'Typing se Gahri Dosti', autogenerate: { directory: 'pehalwaani/typing/gahridosti/' } },
+				{ label: 'Typing se Pakka Rishta', autogenerate: { directory: 'pehalwaani/typing/pakkarishta/' } },
+				{ label: 'Typing se Bonus Rista', autogenerate: { directory: 'pehalwaani/typing/bonusrista/' } },
+				// { label: 'CSS', autogenerate: { directory: 'css' } },
 			],
 			components: {
 				Sidebar: './src/overrides/Sidebar.astro',
