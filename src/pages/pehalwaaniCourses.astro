@@ -2,16 +2,32 @@
 import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
 import { CardGrid, LinkCard } from "@astrojs/starlight/components";
 ---
- <StarlightPage frontmatter={{
+
+<StarlightPage
+  frontmatter={{
     title: "Tarang Course",
-    template: 'splash'
-}}>
-<CardGrid>
-  <LinkCard title="Typing से जान-पहचान " href="/pehalwaani/typing/jaanpahchan/aintroduction"/>
-  <LinkCard title="Typing से दोस्ती" href="/pehalwaani/typing/dosti/video"/> 
-  <LinkCard title="Typing से गहरी दोस्ती " href="/pehalwaani/typing/gahridosti/values" /> 
-  <LinkCard title="Typing से पक्का रिश्ता " href="/pehalwaani/typing/pakkarishta/values" /> 
-  <LinkCard title="Typing से BONUS रिश्ता" href="/pehalwaani/typing/bonusrista/video"  />
-</CardGrid>
+    template: "splash",
+  }}
+>
+  <CardGrid>
+    <LinkCard
+      title="Typing से जान-पहचान "
+      href="/pehalwaani/typing/jaanpahchan/aintroduction"
+    />
+    <LinkCard title="Typing से दोस्ती"
+     href="/pehalwaani/typing/dosti/practice" 
+     />
+    <LinkCard
+      title="Typing से गहरी दोस्ती "
+      href="/pehalwaani/typing/gahridosti/values"
+    />
+    <LinkCard
+      title="Typing से पक्का रिश्ता "
+      href="/pehalwaani/typing/pakkarishta/values"
+    />
+    <LinkCard
+      title="Typing से BONUS रिश्ता"
+      href="/pehalwaani/typing/bonusrista/video"
+    />
+  </CardGrid>
 </StarlightPage>
- 
