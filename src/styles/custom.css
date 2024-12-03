@@ -1,3 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* Orange - #FF6935 */
+/* Beige - #FIDFD7 */
+/* Dark Blue - #487AFF */
+/* Light Blue - #D4E4FF */
+
+
+/* Font-family ko globally apply karein */
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Specific English text ke liye */
+.english-text {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+
 /* sl-container {
 
     max-width: none !important;
